@@ -244,7 +244,7 @@ ls -ld
 drwxr-x--- 4 usuario1 usuario1 4096 ago  9 18:09 .
 
 
-Reflexion:
+##Reflexion:
 
 ¿Por qué es importante gestionar correctamente los usuarios y permisos en un sistema operativo?
 
