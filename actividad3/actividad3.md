@@ -190,7 +190,7 @@ groups usuario2
 
 usuario2 : usuario2 grupo2
 
-#### Eliminar Grupo
+### Eliminar Grupo
 
 sudo deluser usuario2 grupo2
 
