@@ -1,4 +1,5 @@
 # Parte 1
+### Creación de Usuarios
 sudo adduser usuario1
 
 [sudo] password for bryan: 
@@ -109,6 +110,8 @@ Enter the new value, or press ENTER for the default
  
 Is the information correct? [Y/n] y
 
+### Asignación de Contraseñas
+
 sudo passwd usuario1
 
 New password: 
@@ -139,9 +142,13 @@ Retype new password:
 
 passwd: password updated successfully
 
+### Información de Usuarios
+
 id usuario1
 
 uid=1001(usuario1) gid=1001(usuario1) groups=1001(usuario1)
+
+### Eliminación de Usuarios
 
 sudo deluser usuario3
 
@@ -152,6 +159,8 @@ Warning: group `usuario3' has no more members.
 Done.
 
 # Parte 2
+
+### Creación de Grupos
 
 sudo addgroup grupo1
 
@@ -165,10 +174,13 @@ Adding group `grupo2' (GID 1004) ...
 
 Done.
 
+### Agregar Usuarios a Grupos
 
 sudo usermod -aG grupo1 usuario1
 
 sudo usermod -aG grupo2 usuario2
+
+### Verificar Membresía
 
 groups usuario1
 
@@ -177,6 +189,8 @@ usuario1 : usuario1 grupo1
 groups usuario2
 
 usuario2 : usuario2 grupo2
+
+#### Eliminar Grupo
 
 sudo deluser usuario2 grupo2
 
@@ -192,6 +206,8 @@ Done.
 
 # Parte 3
 
+### Creación de Archivos y Directorios
+
 sudo -iu usuario1
 
 nano archivo1.txt
@@ -202,6 +218,7 @@ cd directorio1
 
 touch archivo2.txt
 
+### Verificar Permisos
 
 ls -l archivo1.txt 
 
@@ -211,15 +228,25 @@ ls -ld ~
 
 drwxr-x--- 3 usuario1 usuario1 4096 ago  9 17:58 /home/usuario1
 
+### Modificar Permisos usando `chmod` con Modo Numérico
+
 chmod 640 archivo1.txt
+
+### Modificar Permisos usando `chmod` con Modo Simbólico
 
 chmod u+x archivo2.txt
 
+### Cambiar el Grupo Propietario
+
 chown :grupo1 archivo2.txt
+
+### Configurar Permisos de Directorio
 
 cd ../
 
 chmod 740 directorio1
+
+### Comprobación de Acceso
 
 cat archivo1.txt
 
@@ -228,6 +255,8 @@ cat: archivo1.txt: Permission denied
 cat directorio1/archivo2.txt
 
 cat: directorio1/archivo2.txt: Permission denied
+
+### Verificación Final
 
 su usuario1
 
