@@ -1,21 +1,39 @@
 sudo adduser usuario1
+
 [sudo] password for bryan: 
+
 Adding user `usuario1' ...
+
 Adding new group `usuario1' (1001) ...
+
 Adding new user `usuario1' (1001) with group `usuario1' ...
+
 Creating home directory `/home/usuario1' ...
+
 Copying files from `/etc/skel' ...
+
 New password: 
+
 BAD PASSWORD: The password is shorter than 8 characters
+
 Retype new password: 
+
 passwd: password updated successfully
+
 Changing the user information for usuario1
+
 Enter the new value, or press ENTER for the default
+
 	Full Name []: 
+ 
 	Room Number []: 
+ 
 	Work Phone []: 
+ 
 	Home Phone []: 
+ 
 	Other []: 
+ 
 Is the information correct? [Y/n] y
 
 sudo adduser usuario2
