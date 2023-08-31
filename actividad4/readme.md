@@ -25,5 +25,5 @@ para recargar las unidades de systemd, y habilitar el servicio ademas de iniciar
 
 5. Para ver la salida del servicio usar el comando:
 
-   ``bash
+   ```bash
    sudo systemctl status saludo.service
