@@ -1,0 +1,10 @@
+[Unit]
+Description=Script de saludo y fecha de actividad 4
+
+[Service]
+Type=oneshot
+ExecStart=/home/bryan/actividad4script.sh
+
+
+[Install]
+WantedBy=multi-user.target
